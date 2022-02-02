@@ -43,7 +43,6 @@ jobs:
       matrix:
         module_name: ["nidmm", "niswitch"]
     steps:
-      - name: system_tests_win32
       - uses: actions/checkout@v1
       - uses: ./action1
         with:
