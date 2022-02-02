@@ -5,11 +5,15 @@ inputs:
     description: "module name"
     required: true
     default: ""
+  os_name:
+    description: "Operating System"
+    required: true
+    default: ""
 
 runs:
   using: "composite"
   steps:
     - name: checkout repository
       uses: actions/checkout@v2
-    - run: echo "Hello ${{ inputs.module_name }}"
+    - run: echo "Hello ${{ inputs.module_name }} ${{ inputs.os_name }}"
       shell: bash

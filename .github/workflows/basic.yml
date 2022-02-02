@@ -47,3 +47,4 @@ jobs:
         uses: SukruthGrandhiNI/TestGithubActions@main
         with:
           module_name: ${{ matrix.module_name }}
+          os_name: "Windows"
