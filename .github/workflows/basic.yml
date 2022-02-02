@@ -34,3 +34,16 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  do-the-job:
+    name: system_tests_win32
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      matrix:
+        module_name: ["nidmm", "niswitch"]
+    steps:
+      - name: system_tests_win32
+        uses: SukruthGrandhiNI/TestGithubActions@master
+        with:
+          module_name: ${{ matrix.module_name }}
