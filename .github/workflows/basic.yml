@@ -44,7 +44,8 @@ jobs:
         module_name: ["nidmm", "niswitch"]
     steps:
       - name: system_tests_win32
-        uses: ./action1
+      - uses: actions/checkout@v1
+      - uses: ./action1
         with:
           module_name: ${{ matrix.module_name }}
           os_name: "Windows"
