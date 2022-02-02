@@ -44,7 +44,7 @@ jobs:
         module_name: ["nidmm", "niswitch"]
     steps:
       - name: system_tests_win32
-        uses: SukruthGrandhiNI/TestGithubActions@main
+        uses: SukruthGrandhiNI/TestGithubActions/action1@main
         with:
           module_name: ${{ matrix.module_name }}
           os_name: "Windows"
