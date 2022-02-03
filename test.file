@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 abc
 def
+<<<<<<< HEAD
 aasdf
 =======
 abc
@@ -19,3 +20,6 @@ abc
 abc
 def
 >>>>>>> 9da4548 (test the changes)
+=======
+efg
+>>>>>>> 21f8d5d (test the commit)
