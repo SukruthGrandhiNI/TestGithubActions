@@ -8,8 +8,10 @@ on:
     branches:
       - master
       - releases/*
-      - main
-    types: [review_requested, ready_for_review, synchronize]
+    types:
+      - review_requested
+      - ready_for_review
+      - synchronize
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
